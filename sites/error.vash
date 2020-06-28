@@ -1,0 +1,15 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+    <style>
+        body {
+            padding: 50px;
+            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        }
+        a {
+            color: #00B7FF;
+        }
+    </style>
+    <h1>@model.message</h1>
+    <h2>@model.error.status</h2>
+  })
+})
