@@ -110,7 +110,7 @@ module.exports.hH = (rooms) => {
       hum = room.hum;
       name = room.device;
     }else{
-      if(hum > room.hum){
+      if(hum < room.hum){
         hum = room.hum;
         name = room.device;
       }
@@ -128,7 +128,7 @@ module.exports.lH = (rooms) => {
       hum = room.hum;
       name = room.device;
     }else{
-      if(hum < room.hum){
+      if(hum > room.hum){
         hum = room.hum;
         name = room.device;
       }
