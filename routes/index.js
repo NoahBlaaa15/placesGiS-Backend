@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var data = require('./data');
 
-let rooms = [ {device: 'Server', users: 1, hum: 20, temp: 20, light: 500, timestamp: Date.now()} ];
+let rooms = [ {device: 'Server', users: 1, hum: 20, temp: 20, light: 50, timestamp: Date.now()} ];
 
 router.get('/', function(req, res, next) {
   if(req.query.device != null){

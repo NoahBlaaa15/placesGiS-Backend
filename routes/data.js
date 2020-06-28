@@ -1,5 +1,5 @@
 module.exports.converter = (req) => {
-  let newData = {device: req.query.device, users: req.query.users, hum: req.query.hum, temp: req.query.temp, light: req.query.light, timestamp: Date.now()};
+  let newData = {device: req.query.device, users: req.query.users, hum: req.query.hum, temp: req.query.temp, light: parseInt(req.query.light) / 6, timestamp: Date.now()};
   return newData;
 };
 
